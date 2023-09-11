@@ -508,8 +508,8 @@ body.dark-mode {
     justify-content: center;
     width: 100%;
     position: fixed;
-    bottom: 20px;
-    height: 7vh;
+    bottom: 10px;
+    height: 6vh;
     margin-top: 19px;
 }
 .footer-text p {
@@ -607,12 +607,12 @@ body.dark-mode {
         border-radius: 1rem;
     }
     .infocard-container{
-        height: 78vh;
+        height: 77vh;
         border-radius: 1rem;
         margin-bottom: 75px;
-        width: 76%;
-        margin-left: 12%;
-        margin-right: 12%;
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
     }
     .infocard-logo{
         margin-right: 5%;
