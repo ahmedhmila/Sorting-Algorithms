@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="src/js/Darkmode.js"></script>
+    <script src="src/js/LetterHover.js"></script>
+    <script src="src/js/Main.js"></script>
+    <link rel="stylesheet" href="src/css/Style.css" />
+    <link rel="icon" href="Media/HomeL.png" />
+    <title>Sorting Algorithms</title>
+  </head>
+  <body onload="Dmode()">
+    <header>
+      <!-- logo bl effet w fazet -->
+      <div class="card">
+        <div class="card-image">
+          <img src="Media/darklogo.svg" width="420" height="420" id="logoImage" onclick="Dmode()" title="toggle Darkmode" />
+        </div>
+        <div class="card-gradient"></div>
+        <div class="card-letters"></div>
+      </div>
+      <nav>
+        <button id="navButton" title="Click to toggle navigation">> <span class="blink">_</span>
+        </button>
+        <div class="ParamsContainer" id="ParamsContainer">
+          <select name="SA" id="SA" title="Select a sorting algorithm">
+            <option value="Bubble">Bubble Sort</option>
+            <option value="Selection">Selection Sort</option>
+            <option value="Insertion">Insertion Sort</option>
+            <option value="Merge">Merge Sort</option>
+            <option value="Quick">Quick Sort</option>
+            <option value="Heap">Heap Sort</option>
+            <option value="Radix">Radix Sort</option>
+          </select>
+          <label for="numE" id="numEE" >N°elements:</label>
+          <input type="number" id="numE" name="numE" title="Enter the number of elements" placeholder=".." />
+        </div>
+        <div class="playButtonContainer" id="playButtonContainer">
+          <button id="playButton" onclick="Start()" title="Click to start sorting">
+            <img src="Media\playButton.svg" id="playb" width="60px" height="60px" />
+          </button>
+        </div>
+        <div class="paramButtonContainer" id="paramButtonContainer">
+          <button id="speed0Button" title="Slower speed">
+            <img id="SD" src="Media\lightsd.svg" width="60px" height="60px" />
+          </button>
+          <button id="speed1Button" title="Normal speed">
+            <img id="NP" src="Media\LightNPButton.svg" width="60px" height="60px" />
+          </button>
+          <button id="speed2Button" title="Faster speed">
+            <img id="FF" src="Media\LightFF.svg" width="60px" height="60px" />
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="S1" id="S1">
+      <div class="rectangle-container" id="rectangleContainer"></div>
+    </section>
+    <section class="S2" id="S2">
+      <div class="infocard-container">
+        <div class="infocard">
+          <div class="infocard-header">
+            <div class="infocard-title" id="infocard-title"></div>
+            <div class="infocard-logo">
+              <img src="Media/lightinf.svg" id="infoL" width="40px" height="40px" />
+            </div>
+          </div>
+          <div class="infocard-body">
+            <div class="infocard-text" id="infocard-text"></div>
+          </div>
+        </div>
+        <div class="section-letters"></div>
+      </div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="Media/darklogo.svg" id="flogo" width="50px" height="50px" onclick="window.location.reload();" title="Click to reload the page"/>
+          <a href="https://github.com/ahmedhmila" target="_blank">
+            <img src="Media/lightgit.svg" id="github" title="Visit my GitHub profile" width="50px" height="40px">
+          </a>
+        </div>
+        <div class="footer-text">
+          <p>Sorting Algorithms | Ahmed Hmila © 2023</p>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/Sorting.js"></script>
+    <script src="src/js/sectionhover.js"></script>
+  </body>
+</html>
