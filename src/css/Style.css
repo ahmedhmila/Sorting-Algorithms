@@ -473,7 +473,7 @@ body.dark-mode {
 }
 .infocard-logo{
     margin-top: 2%;
-    margin-right: 2%;
+    margin-right: 3%;
     width: 7%;
     align-items: right;
 }
@@ -603,13 +603,16 @@ body.dark-mode {
     font-size: 30px;
     }
     .infocard{
-        height: 70vh;
+        height: 74vh;
         border-radius: 1rem;
     }
     .infocard-container{
-        height: 74vh;
+        height: 78vh;
         border-radius: 1rem;
         margin-bottom: 75px;
+        width: 76%;
+        margin-left: 12%;
+        margin-right: 12%;
     }
     .infocard-logo{
         margin-right: 5%;
