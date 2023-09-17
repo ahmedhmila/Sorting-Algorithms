@@ -478,7 +478,7 @@ body.dark-mode {
     align-items: right;
 }
 .infocard-logo:hover{
-    scale: 1.15;
+    scale: 1.11;
 }
 .infocard-body{
     display: flex;
@@ -569,15 +569,20 @@ body.dark-mode {
     label {
         display: none;
    }
+    select {
+        font-size: 23px;
+        left: 0;
+
+    }
     .playButtonContainer, .paramButtonContainer {
         display: block;
         width: 10%;
         left: 0;
         margin-left: 0;
    }
-    .playButtonContainer:hover, .paramButtonContainer:hover {
-        transform: scale(1);
-   }
+   #playButton:hover{
+    scale: 1.51;
+    }
     .S1{
         margin-left: 10%;
         width: 90%;
@@ -593,8 +598,8 @@ body.dark-mode {
         height: 40px;
    }
     #infoL{
-        width: 20px;
-        height: 20px;
+        width: 23px;
+        height: 23px;
    }
     #logoImage{
         width: 300px;
@@ -619,7 +624,7 @@ body.dark-mode {
         margin-right: 7%;
     }
     .infocard-logo{
-        margin-right: 5%;
+        margin-right: 3.9%;
    }
    .footer {
         flex-direction: column;
