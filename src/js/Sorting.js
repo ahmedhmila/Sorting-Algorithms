@@ -1,5 +1,5 @@
 //animation speed
-let delayTime = 1000; // (l speed laslenia)
+let delayTime = 800; // (l speed laslenia)
 document.addEventListener("DOMContentLoaded", function() {
 	const speed1Button = document.getElementById("speed1Button");
 	const speed2Button = document.getElementById("speed2Button");
