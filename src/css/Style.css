@@ -556,7 +556,9 @@ body.dark-mode {
         width: 100%;
    }
     #navButton{
-        font-size: 30px;
+      font-size: 27px;
+      margin-left: 3%;
+      width: auto;
    }
     .ParamsContainer {
         margin-top: 2%;
@@ -626,6 +628,8 @@ body.dark-mode {
     .footer-logo, .footer-text, .github {
         display: block;
         text-align: center;
+        font-size: 15px;
+
    }
     .footer-logo img {
         width: 40px;
