@@ -557,12 +557,14 @@ body.dark-mode {
    }
     #navButton{
       font-size: 27px;
-      margin-left: 3%;
+      margin-left: 2.3%;
       width: auto;
    }
     .ParamsContainer {
         margin-top: 2%;
         width: auto;
+        margin-left: 2.3%;
+        align-items: stretch;
    }
     label {
         display: none;
@@ -624,11 +626,12 @@ body.dark-mode {
         align-items: center;
         margin-top: 60px;
         bottom: 40px;
+        margin-right: 5%;
    }
     .footer-logo, .footer-text, .github {
         display: block;
         text-align: center;
-        font-size: 15px;
+        font-size: 13px;
 
    }
     .footer-logo img {
