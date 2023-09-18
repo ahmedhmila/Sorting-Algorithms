@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     navButton.addEventListener("click", () => {
         if (window.innerWidth < 768) {
-            if (playButtonContainer.style.display == "none") {
+            if (playButtonContainer.style.display === "none") {
                 playButtonContainer.style.display = "block";
                 paramButtonContainer.style.display = "block";
                 S1.style.width = "85%";
@@ -23,12 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 S1.style.marginRight = "2%";
             }
         } else {
-            if (playButtonContainer.style.display == "none") {
+            if (playButtonContainer.style.display === "none") {
                 playButtonContainer.style.display = "block";
             } else {
-                playButtonContainer.style.display == "none";
+                playButtonContainer.style.display = "none";
             }
         }
     });
 });
-
