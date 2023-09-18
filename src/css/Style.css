@@ -459,7 +459,7 @@ body.dark-mode {
     overflow-y: auto;
 }
 .infocard:hover{
-    scale: 1.15;
+    scale: 1.045;
 }
 .infocard-header{
     display:flex;
@@ -553,7 +553,7 @@ body.dark-mode {
 /* For screens with a width of 768px or less (typical tablet screens) */
 @media (max-width: 768px) {
     .card{
-        height: 20vh;
+        height: 22vh;
         border-radius: 1rem;
     }
   .rectangle{
