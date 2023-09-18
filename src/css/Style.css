@@ -1,675 +1,689 @@
 /*rectangles*/
-.rectangle-container {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    justify-content: center;
-    margin: 75px 0px 0px 0px;
-    height: 30vh;
-    width: 100%;
+ .rectangle-container {
+     display: flex;
+     align-items: flex-end;
+     position: relative;
+     justify-content: center;
+     margin: 75px 0px 0px 0px;
+     height: 30vh;
+     width: 100%;
 }
-.rectangle {
-    margin: 5px;
-    width: 20px;
-    background-color: rgb(111, 111, 111);
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    padding: 5px;
-    font-size: 15px;
-    font-family: monospace;
-    transition: left 1s , background-color 0.5s ease;
+ .rectangle {
+     margin: 5px;
+     width: 20px;
+     background-color: rgb(111, 111, 111);
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+     padding: 5px;
+     font-size: 15px;
+     font-family: monospace;
+     transition: left 1s , background-color 0.5s ease;
 }
-.moving-rectangle {
-    background-color: rgb(0, 0, 0);
+ .moving-rectangle {
+     background-color: rgb(0, 0, 0);
 }
-.end-rectangle{
-    background-color: #06bb00;
+ .end-rectangle{
+     background-color: #06bb00;
 }
-.pivot-rectangle {
-    background-color: orange;
+ .pivot-rectangle {
+     background-color: orange;
 }
-.current-rectangle {
-    background-color: lightcoral;
+ .current-rectangle {
+     background-color: lightcoral;
 }
 /*Dark mode rectangles*/
-.dark-mode .rectangle-container {
-    border-color: #666;
+ .dark-mode .rectangle-container {
+     border-color: #666;
 }
-.dark-mode .rectangle {
-    background-color: rgb(77, 77, 77);
-    color: #fff;
+ .dark-mode .rectangle {
+     background-color: rgb(77, 77, 77);
+     color: #fff;
 }
-.dark-mode .moving-rectangle {
-    background-color: rgb(255, 255, 255);
-    color: #000000;
+ .dark-mode .moving-rectangle {
+     background-color: rgb(255, 255, 255);
+     color: #000000;
 }
-.dark-mode .end-rectangle {
-    background-color:#06bb00;
+ .dark-mode .end-rectangle {
+     background-color:#06bb00;
 }
-.dark-mode .pivot-rectangle {
-    background-color: orange;
+ .dark-mode .pivot-rectangle {
+     background-color: orange;
 }
-.dark-mode .current-rectangle {
-    background-color: lightcoral;
+ .dark-mode .current-rectangle {
+     background-color: lightcoral;
 }
 /*buttons*/
-button{
-    height: 50px;
+ button{
+     height: 50px;
 }
-button:hover{
-    scale: 1.2;
+ button:hover{
+     scale: 1.2;
 }
-#navButton {
-    position: relative;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 10%;
-    border: none;
-    background-color: aliceblue;
-    color: #000000;
-    cursor: pointer;
-    font-size: 35px;
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5%;
+ #navButton {
+     position: relative;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     width: 10%;
+     border: none;
+     background-color: aliceblue;
+     color: #000000;
+     cursor: pointer;
+     font-size: 35px;
+     font-weight: bold;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 5%;
 }
-#playButton {
-    position: relative;
-    color: #06bb00;
-    background-color: aliceblue;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ #playButton {
+     position: relative;
+     color: #06bb00;
+     background-color: aliceblue;
+     cursor: pointer;
+     border: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
-#playButton:hover{
-    scale: 2;
+ #playButton:hover{
+     scale: 2;
 }
-#speed2Button :hover{
-    scale: 1.5;
+ #speed2Button :hover{
+     scale: 1.5;
 }
-#speed1Button :hover{
-    scale: 1.5;
+ #speed1Button :hover{
+     scale: 1.5;
 }
-#speed0Button :hover{
-    scale: 1.5;
+ #speed0Button :hover{
+     scale: 1.5;
 }
-#speed1Button {
-    position: relative;
-    border-radius: 5%;
-    background-color: aliceblue;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ #speed1Button {
+     position: relative;
+     border-radius: 5%;
+     background-color: aliceblue;
+     cursor: pointer;
+     border: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
-#speed0Button {
-    position: relative;
-    cursor: pointer;
-    background-color: aliceblue;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ #speed0Button {
+     position: relative;
+     cursor: pointer;
+     background-color: aliceblue;
+     border: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
-#speed2Button {
-    position: relative;
-    background-color: aliceblue;
-    color: #ff9dea;
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ #speed2Button {
+     position: relative;
+     background-color: aliceblue;
+     color: #ff9dea;
+     cursor: pointer;
+     border: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
 }
-#numEE{
-    position: relative;
-    border-radius: 5%;
-    background-color: aliceblue;
-    color: #000000;
-    cursor: pointer;
-    font-size: 29px;
-    font-weight: bold;
-    font-family: monospace;
+ #numEE{
+     position: relative;
+     border-radius: 5%;
+     background-color: aliceblue;
+     color: #000000;
+     cursor: pointer;
+     font-size: 29px;
+     font-weight: bold;
+     font-family: monospace;
 }
-select {
-    position: relative;
-    font-family: monospace;
-    border: none;
-    background-color: aliceblue;
-    color: #000000;
-    cursor: pointer;
-    font-size: 25px;
-    font-weight: bold;
-    font: monospace;
+ select {
+     position: relative;
+     font-family: monospace;
+     border: none;
+     background-color: aliceblue;
+     color: #000000;
+     cursor: pointer;
+     font-size: 25px;
+     font-weight: bold;
+     font: monospace;
 }
-label{
-    position: relative;
-    background-color: aliceblue;
-    margin-left: 10px;
-    color: #000000;
-    cursor: pointer;
-    font-size: 27px;
-    font-weight: bold;
+ label{
+     position: relative;
+     background-color: aliceblue;
+     margin-left: 10px;
+     color: #000000;
+     cursor: pointer;
+     font-size: 27px;
+     font-weight: bold;
 }
-input {
-    border-radius: 10%;
-    position: relative;
-    background-color: aliceblue;
-    color: #000000;
-    cursor: pointer;
-    border: none;
-    font-size: 25px;
-    font-weight: bold;
-    width: 40px;
-    margin-right: 5px;
-    border-color: aliceblue;
+ input {
+     border-radius: 10%;
+     position: relative;
+     background-color: aliceblue;
+     color: #000000;
+     cursor: pointer;
+     border: none;
+     font-size: 25px;
+     font-weight: bold;
+     width: 40px;
+     margin-right: 5px;
+     border-color: aliceblue;
 }
-input::placeholder {
-    color: #000000;
-    font: monospace;
-    font-size: 22px;
+ input::placeholder {
+     color: #000000;
+     font: monospace;
+     font-size: 22px;
 }
-.ParamsContainer {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    left: 10%;
-   /* 10% width occupied by navButton */
-    top: 0;
-    bottom: 0;
-    width: 35%;
-   /* 35% width of the available space */
-    margin-left: 10px;
+ .ParamsContainer {
+     visibility: visible;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     position: absolute;
+     left: 10%;
+    /* 10% width occupied by navButton */
+     top: 0;
+     bottom: 0;
+     width: 35%;
+    /* 35% width of the available space */
+     margin-left: 10px;
 }
-.playButtonContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 45%;
-   /* 45% width occupied by navButton + ParamsContainer */
-    top: 0;
-    bottom: 0;
-    width: 10%;
-   /* 10% width of the available space */
-    margin: 0;
+ .playButtonContainer{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     left: 45%;
+    /* 45% width occupied by navButton + ParamsContainer */
+     top: 0;
+     bottom: 0;
+     width: 10%;
+    /* 10% width of the available space */
+     margin: 0;
 }
-.paramButtonContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 55%;
-   /* 55% width occupied by navButton + ParamsContainer + Play Button */
-    top: 0;
-    bottom: 0;
-    width: 45%;
-   /* 45% width of the available space */
-    margin: 0;
+ .paramButtonContainer{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     left: 55%;
+    /* 55% width occupied by navButton + ParamsContainer + Play Button */
+     top: 0;
+     bottom: 0;
+     width: 45%;
+    /* 45% width of the available space */
+     margin: 0;
 }
-.paramButtonContainer button {
-    margin: 0 5px;
+ .paramButtonContainer button {
+     margin: 0 5px;
 }
 /*Dark mode buttons*/
-.dark-mode #navButton {
-    background-color: #000000;
-    color: #ffffff;
+ .dark-mode #navButton {
+     background-color: #000000;
+     color: #ffffff;
 }
-.dark-mode #playButton {
-    background-color: #000000;
+ .dark-mode #playButton {
+     background-color: #000000;
 }
-.dark-mode #speed1Button {
-    background-color: #000000;
+ .dark-mode #speed1Button {
+     background-color: #000000;
 }
-.dark-mode #speed2Button {
-    background-color: #000000;
+ .dark-mode #speed2Button {
+     background-color: #000000;
 }
-.dark-mode #speed0Button {
-    background-color: #000000;
+ .dark-mode #speed0Button {
+     background-color: #000000;
 }
-.dark-mode #numEE{
-    background-color: #000000;
-    color: #ffffff;
+ .dark-mode #numEE{
+     background-color: #000000;
+     color: #ffffff;
 }
-.dark-mode select {
-    background-color: #000000;
-    color: #ffffff;
+ .dark-mode select {
+     background-color: #000000;
+     color: #ffffff;
 }
-.dark-mode input {
-    background-color: #000000;
-    color: #ffffff;
+ .dark-mode input {
+     background-color: #000000;
+     color: #ffffff;
 }
-.dark-mode input::placeholder {
-    color: #ffffff;
+ .dark-mode input::placeholder {
+     color: #ffffff;
 }
 /*nav bar*/
-nav{
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 10px 0px 10px 0px;
-    height: 8vh;
-    width: 100%;
+ nav{
+     display: flex;
+     align-items: center;
+     position: relative;
+     margin: 10px 0px 10px 0px;
+     height: 8vh;
+     width: 100%;
 }
-.S1{
-    margin-top: 20px;
-    display: flex;
+ .S1{
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 /*logo*/
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0px 0px 0px 0px;
-    height: 20vh;
-    width: 100%;
+ .logo {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     margin: 0px 0px 0px 0px;
+     height: 20vh;
+     width: 100%;
 }
 /*body*/
-body {
-    display: block;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    background-color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    --font-size: 1rem;
-    --logo-size: 100%;
-    --x: 0px;
-    --y: 0px;
+ body {
+     display: block;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     width: 100%;
+     background-color: aliceblue;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 1rem;
+     --font-size: 1rem;
+     --logo-size: 100%;
+     --x: 0px;
+     --y: 0px;
 }
-body.dark-mode {
-    background-color: #000000;
+ body.dark-mode {
+     background-color: #000000;
 }
 /*card hover effect */
-:root {
-   /*light mode*/
-    --background-rgb: 240 248 255;
-   /*background color*/
-    --background-light-rgb: 246 246 246;
-   /*cercle color*/
-    --border-rgb: 255 255 255;
-    --border: 1px solid rgb(var(--border-rgb) / 20%);
-    --grad-main-rgb: 240 248 255;
-    --grad-main-light-rgb: 240 248 255;
-    --grad-secondary-rgb: 229 141 250;
-   /*dark mode*/
-    --background-dark-rgb: 0 0 0;
-    --dgrad-main-light-rgb: 240 248 255;
-    --dgrad-secondary-rgb: 229 141 250;
-    --card-size: 480px;
-    --font-size: 0.8rem;
-    --logo-size: calc(var(--card-size) * 0.3);
+ :root {
+    /*light mode*/
+     --background-rgb: 240 248 255;
+    /*background color*/
+     --background-light-rgb: 246 246 246;
+    /*cercle color*/
+     --border-rgb: 255 255 255;
+     --border: 1px solid rgb(var(--border-rgb) / 20%);
+     --grad-main-rgb: 240 248 255;
+     --grad-main-light-rgb: 240 248 255;
+     --grad-secondary-rgb: 229 141 250;
+    /*dark mode*/
+     --background-dark-rgb: 0 0 0;
+     --dgrad-main-light-rgb: 240 248 255;
+     --dgrad-secondary-rgb: 229 141 250;
+     --card-size: 480px;
+     --font-size: 0.8rem;
+     --logo-size: calc(var(--card-size) * 0.3);
 }
-.card {
-    display: flex;
-    height: 34vh;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1;
-    position: relative;
-    margin: 0px 0px 10px 0px;
-    border-radius: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-    background-color: rgb(240, 248, 255);
-   /*3ajebnii coloe background-color: rgb(237, 237, 237);
-    */
-    width: 100%;
+ .card {
+     display: flex;
+     height: 34vh;
+     align-items: center;
+     justify-content: center;
+     aspect-ratio: 1;
+     position: relative;
+     margin: 0px 0px 10px 0px;
+     border-radius: 2rem;
+     overflow: hidden;
+     cursor: pointer;
+     background-color: rgb(240, 248, 255);
+    /*3ajebnii coloe background-color: rgb(237, 237, 237);
+     */
+     width: 100%;
 }
-.card-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 4;
+ .card-image {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     z-index: 4;
 }
-.card-image > img {
-    width: var(--logo-size);
+ .card-image > img {
+     width: var(--logo-size);
 }
-.card-gradient {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: radial-gradient( rgb(var(--background-light-rgb)) 25%, rgb(var(--grad-main-rgb)) 50% 
-   /*louken theb tzid kl gradients zouz cercles outer , rgb(var(--grad-main-light-rgb)), rgb(var(--grad-secondary-rgb))*/
-    );
-    mix-blend-mode: darken;
-    pointer-events: none;
-    z-index: 3;
+ .card-gradient {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     background: radial-gradient( rgb(var(--background-light-rgb)) 25%, rgb(var(--grad-main-rgb)) 50% 
+    /*louken theb tzid kl gradients zouz cercles outer , rgb(var(--grad-main-light-rgb)), rgb(var(--grad-secondary-rgb))*/
+     );
+     mix-blend-mode: darken;
+     pointer-events: none;
+     z-index: 3;
 }
-.card-letters {
-    --x: 0px;
-    --y: 0px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    color: black;
-    font-size: var(--font-size);
-    font-weight: 500;
-    word-wrap: break-word;
-    font-family: 'Courier New', Courier, monospace;
-    opacity: 0;
-    transition: opacity 400ms;
-    -webkit-mask-image: radial-gradient( calc(var(--card-size) * 0.8) circle at var(--x) var(--y), rgb(255 255 255) 20%, rgb(255 255 255 / 25%), transparent );
-    scale: 1.03;
+ .card-letters {
+     --x: 0px;
+     --y: 0px;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     height: 100%;
+     width: 100%;
+     color: black;
+     font-size: var(--font-size);
+     font-weight: 500;
+     word-wrap: break-word;
+     font-family: 'Courier New', Courier, monospace;
+     opacity: 0;
+     transition: opacity 400ms;
+     -webkit-mask-image: radial-gradient( calc(var(--card-size) * 0.8) circle at var(--x) var(--y), rgb(255 255 255) 20%, rgb(255 255 255 / 25%), transparent );
+     scale: 1.03;
 }
-.card:hover .card-letters {
-    opacity: 1;
+ .card:hover .card-letters {
+     opacity: 1;
 }
 /*dark mode card hover effect */
-.dark-mode .card {
-    background-color: rgb(0, 0, 0);
+ .dark-mode .card {
+     background-color: rgb(0, 0, 0);
 }
-.dark-mode .card-gradient {
-    background: radial-gradient( rgb(var(--background-light-rgb)) 25%, rgb(var(--dgrad-main-rgb)) 50% 
-   /*louken theb tzid kl gradients zouz cercles outer , rgb(var(--grad-main-light-rgb)), rgb(var(--grad-secondary-rgb))*/
-    );
-    mix-blend-mode: darken;
-    pointer-events: none;
-    z-index: 3;
+ .dark-mode .card-gradient {
+     background: radial-gradient( rgb(var(--background-light-rgb)) 25%, rgb(var(--dgrad-main-rgb)) 50% 
+    /*louken theb tzid kl gradients zouz cercles outer , rgb(var(--grad-main-light-rgb)), rgb(var(--grad-secondary-rgb))*/
+     );
+     mix-blend-mode: darken;
+     pointer-events: none;
+     z-index: 3;
 }
-.dark-mode .card-letters {
-    color: rgb(255, 255, 255);
+ .dark-mode .card-letters {
+     color: rgb(255, 255, 255);
 }
-#S2 {
-    display: none;
-    width: 100%;
-    padding-bottom: 40px;
+ #S2 {
+     display: none;
+     width: 100%;
+     padding-bottom: 40px;
 }
-.infocard-container {
-    display: flex;
-    height: 86vh;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1;
-    position: relative;
-    margin: 40px 0px 20px 0px;
-    width: 66%;
-    margin-left: 17%;
-    margin-right: 17%;
+ .infocard-container {
+     display: flex;
+     height: 86vh;
+     align-items: center;
+     justify-content: center;
+     aspect-ratio: 1;
+     position: relative;
+     margin: 40px 0px 20px 0px;
+     width: 66%;
+     margin-left: 17%;
+     margin-right: 17%;
 }
-.section-letters {
-    border-radius: 3rem;
-    overflow: hidden;
-    z-index: 1;
-    --x: 0px;
-    --y: 0px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    color: black;
-    font-size: var(--font-size);
-    font-weight: 500;
-    word-wrap: break-word;
-    font-family: monospace;
-    opacity: 1;
-    -webkit-mask-image: radial-gradient( calc(700 * 0.8) square at var(--x) var(--y), rgb(255 255 255) 20%, rgb(255 255 255 / 25%), transparent );
-    transform: scale(1.03);
+ .section-letters {
+     border-radius: 3rem;
+     overflow: hidden;
+     z-index: 1;
+     --x: 0px;
+     --y: 0px;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     height: 100%;
+     width: 100%;
+     color: black;
+     font-size: var(--font-size);
+     font-weight: 500;
+     word-wrap: break-word;
+     font-family: monospace;
+     opacity: 1;
+     -webkit-mask-image: radial-gradient( calc(700 * 0.8) square at var(--x) var(--y), rgb(255 255 255) 20%, rgb(255 255 255 / 25%), transparent );
+     transform: scale(1.03);
 }
-.dark-mode .section-letters {
-    color: rgb(255, 255, 255);
+ .dark-mode .section-letters {
+     color: rgb(255, 255, 255);
 }
 /*lcartaa taa l informations*/
-.infocard{
-    z-index: 2;
-    cursor: pointer;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    height: 82vh;
-    background-color: aliceblue;
-    border-style:solid ;
-    border-radius: 2rem;
-    border-color: #000000;
-    color: #000000;
-    width: 94%;
-    height: 94%;
-    padding: 0;
-    overflow-y: auto;
+ .infocard{
+     z-index: 2;
+     cursor: pointer;
+     display: inline-block;
+     align-items: center;
+     justify-content: center;
+     position: relative;
+     height: 82vh;
+     background-color: aliceblue;
+     border-style:solid ;
+     border-radius: 2rem;
+     border-color: #000000;
+     color: #000000;
+     width: 94%;
+     height: 94%;
+     padding: 0;
+     overflow-y: auto;
 }
-.infocard:hover{
-    scale: 1.035;
+ .infocard:hover{
+     scale: 1.035;
 }
-.infocard-header{
-    display:flex;
+ .infocard-header{
+     display:flex;
 }
-.infocard-title{
-    font-weight: bold;
-    font-size: 45px;
-    font-family: monospace;
-    width: 87%;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: 5%;
+ .infocard-title{
+     font-weight: bold;
+     font-size: 45px;
+     font-family: monospace;
+     width: 87%;
+     align-items: center;
+     margin-top: 2%;
+     margin-left: 5%;
 }
-.infocard-logo{
-    margin-top: 2%;
-    margin-right: 3%;
-    width: 7%;
-    align-items: right;
+ .infocard-logo{
+     margin-top: 2%;
+     margin-right: 3%;
+     width: 7%;
+     align-items: right;
 }
-.infocard-logo:hover{
-    scale: 1.11;
+ .infocard-logo:hover{
+     scale: 1.11;
 }
-.infocard-body{
-    display: flex;
-    margin-right: 3%;
-    margin-left: 3%;
-    font-family: monospace;
+ .infocard-body{
+     display: flex;
+     margin-right: 3%;
+     margin-left: 3%;
+     font-family: monospace;
 }
-.infocard-text{
-    margin-right: 3%;
-    font-family: monospace;
-    margin-left: 3%;
+ .infocard-text{
+     margin-right: 3%;
+     font-family: monospace;
+     margin-left: 3%;
 }
-.dark-mode .infocard{
-    background-color: black;
-    border-style:solid ;
-    border-radius: 2rem;
-    border-color: #ffffff;
-    color: #fffcfc;
+ .dark-mode .infocard{
+     background-color: black;
+     border-style:solid ;
+     border-radius: 2rem;
+     border-color: #ffffff;
+     color: #fffcfc;
 }
-.footer-logo, .footer-text ,.github{
-    display: inline-block;
-    vertical-align: middle;
+ .footer-logo, .footer-text ,.github{
+     display: inline-block;
+     vertical-align: middle;
 }
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    position: fixed;
-    bottom: 10px;
-    height: 6vh;
-    margin-top: 19px;
+ .footer{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     position: fixed;
+     bottom: 10px;
+     height: 6vh;
+     margin-top: 19px;
 }
-.footer-text p {
-    margin: 0;
+ .footer-text p {
+     margin: 0;
 }
-.footer-container{
-    align-items: center;
+ .footer-container{
+     align-items: center;
 }
-.footer-text{
-    justify-content: center;
-    font-size: 19px;
-    font-family: monospace;
-    align-items: center;
+ .footer-text{
+     justify-content: center;
+     font-size: 19px;
+     font-family: monospace;
+     align-items: center;
 }
-.dark-mode .footer-text{
-    color: #ffffff;
+ .dark-mode .footer-text{
+     color: #ffffff;
 }
 /* animate l _ kifma fl cmd */
-@keyframes blink-animation {
-    0%, 100% {
-        opacity: 0;
-       /* Make the "_" disappear at the beginning and end of animation */
-   }
-    50% {
-        opacity: 1;
-       /* Make the "_" appear in the middle of animation */
-   }
+ @keyframes blink-animation {
+     0%, 100% {
+         opacity: 0;
+        /* Make the "_" disappear at the beginning and end of animation */
+    }
+     50% {
+         opacity: 1;
+        /* Make the "_" appear in the middle of animation */
+    }
 }
 /* Apply the animation to the <span> element inside the button */
-.blink {
-    animation: blink-animation 0.8s infinite;
-   /* Adjust the duration as needed */
+ .blink {
+     animation: blink-animation 0.8s infinite;
+    /* Adjust the duration as needed */
 }
 /*scrollbar ya bro */
-::-webkit-scrollbar {
-    display: none;
+ ::-webkit-scrollbar {
+     display: none;
 }
 /*écrans bro */
 /* For screens with a width of 768px or less (typical tablet screens) */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        display: block;
-        width: 100%;
-   }
-    #navButton{
-      font-size: 27px;
-      margin-left: 2.3%;
-      width: auto;
-   }
-    .ParamsContainer {
-        margin-top: 2%;
-        width: auto;
-        margin-left: 2.3%;
-        align-items: stretch;
-   }
-    label {
-        display: none;
-   }
-    select {
-        font-size: 23px;
-        left: 0;
-
+ @media (max-width: 768px) {
+     .rectangle{
+         margin: 2px;
+         width: 12px;
+         font-size: 12px;
     }
-    .playButtonContainer, .paramButtonContainer {
-        display: block;
-        width: 10%;
-        left: 0;
-        margin-left: 0;
-   }
-   #playButton:hover{
-    scale: 1.51;
+     .rectangle-container{
+         margin: 27px 2.3% 0 2.3%;
+         width: auto;
     }
-    .S1{
-        margin-left: 10%;
-        width: 90%;
-   }
-    .rectangle-container{
-        overflow-x: auto;
-        justify-content: left;
-        overflow-y: auto;
-        width: 100%;
-   }
-    #playb,#SD,#FF,#NP{
-        width: 40px;
-        height: 40px;
-   }
-    #infoL{
-        width: 23px;
-        height: 23px;
-   }
-    #logoImage{
-        width: 300px;
-        height: 300px;
-   }
-    .infocard-text{
-        overflow-x: auto;
-   }
-   .infocard-title{
-    font-size: 30px;
+     nav {
+         flex-direction: column;
+         display: block;
+         width: 100%;
     }
-    .infocard{
-        height: 74vh;
-        border-radius: 1rem;
+     #navButton{
+         font-size: 25px;
+         margin-left: 3.1%;
+         width: auto;
     }
-    .infocard-container{
-        height: 77vh;
-        border-radius: 1rem;
-        margin-bottom: 75px;
-        width: 86%;
-        margin-left: 7%;
-        margin-right: 7%;
+     .ParamsContainer {
+         margin-top: 2%;
+         width: auto;
+         margin-left: 2.3%;
+         align-items: stretch;
     }
-    .infocard-logo{
-        margin-right: 3.9%;
-   }
-   .footer {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 60px;
-        bottom: 40px;
-        margin-right: 5%;
-   }
-    .footer-logo, .footer-text, .github {
-        display: block;
-        text-align: center;
-        font-size: 13px;
-
-   }
-    .footer-logo img {
-        width: 40px;
-   }
-    .footer-logo{
-        margin-top: 19px;
-   }
+     label {
+         display: none;
+    }
+     select {
+         font-size: 21px;
+         left: 0;
+    }
+     input {
+         font-size: 19px;
+    }
+     .playButtonContainer, .paramButtonContainer {
+         display: block;
+         width: 10%;
+         left: 0;
+         margin-left: 0;
+    }
+     #playButton:hover{
+         scale: 1.36;
+    }
+     .S1{
+         margin-left: 10%;
+         width: 88%;
+         margin-right:2% ;
+    }
+     .rectangle-container{
+         overflow-x: auto;
+         justify-content: left;
+         overflow-y: auto;
+         width: 100%;
+    }
+     #playb,#SD,#FF,#NP{
+         width: 37px;
+         height: 37px;
+    }
+     #infoL{
+         width: 23px;
+         height: 23px;
+    }
+     #logoImage{
+         width: 300px;
+         height: 300px;
+    }
+     .infocard-text{
+         overflow-x: auto;
+    }
+     .infocard-title{
+         font-size: 30px;
+    }
+     .infocard{
+         height: 74vh;
+         border-radius: 1rem;
+    }
+     .infocard-container{
+         height: 77vh;
+         border-radius: 1rem;
+         margin-bottom: 75px;
+         width: 86%;
+         margin-left: 7%;
+         margin-right: 7%;
+    }
+     .infocard-logo{
+         margin-right: 3.9%;
+    }
+     .footer {
+         flex-direction: column;
+         align-items: center;
+         margin-top: 60px;
+         bottom: 40px;
+         margin-right: 5%;
+    }
+     .footer-logo, .footer-text, .github {
+         display: block;
+         text-align: center;
+         font-size: 13px;
+    }
+     .footer-logo img {
+         width: 40px;
+    }
+     .footer-logo{
+         margin-top: 19px;
+    }
 }
 /* For screens with a width of 992px or less (typical small laptop screens) */
-@media (max-width: 992px) {
-    .ParamsContainer, .playButtonContainer, .paramButtonContainer {
-        position: relative;
-        width: 100%;
-        left: 0;
-        margin-left: 0;
-   }
+ @media (max-width: 992px) {
+     .ParamsContainer, .playButtonContainer, .paramButtonContainer {
+         position: relative;
+         width: 100%;
+         left: 0;
+         margin-left: 0;
+    }
 }
 /* For screens with a width of 1200px or less (typical large laptop screens) */
-@media (max-width: 1200px) {
-    .ParamsContainer, .playButtonContainer, .paramButtonContainer {
-        position: relative;
-        width: 100%;
-        left: 0;
-        margin-left: 0;
-   }
+ @media (max-width: 1200px) {
+     .ParamsContainer, .playButtonContainer, .paramButtonContainer {
+         position: relative;
+         width: 100%;
+         left: 0;
+         margin-left: 0;
+    }
 }
 /* For screens with a width of 1600px or less (typical desktop screens) */
-@media (max-width: 1600px) {
-    .ParamsContainer, .playButtonContainer, .paramButtonContainer {
-        position: relative;
-        width: 100%;
-        left: 0;
-        margin-left: 0;
-   }
+ @media (max-width: 1600px) {
+     .ParamsContainer, .playButtonContainer, .paramButtonContainer {
+         position: relative;
+         width: 100%;
+         left: 0;
+         margin-left: 0;
+    }
 }
+ 
