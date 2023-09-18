@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 toul_rect=300;
 if (window.innerWidth < 768) {
-	toul_rect=230;
+	toul_rect=219;
 }else(toul_rect=300)
 
 //kaddeh mn élt fl array
