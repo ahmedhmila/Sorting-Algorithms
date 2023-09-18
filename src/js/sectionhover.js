@@ -5,9 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let x = 0,
         y = 0,
         xDirection = 1,
-        yDirection = 1,
-        speed = 1;
-
+        yDirection = 1;
+    const speed = 1;
     const rect = card.getBoundingClientRect();
 
     const updatePosition = () => {
@@ -32,8 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function randomString(length) {
         let result = '';
-        let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-        let charactersLength = characters.length;
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const charactersLength = characters.length;
         for (let i = 0; i < length; i++) {
             result += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
