@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const paramsContainer = document.getElementById("ParamsContainer");
     const playButtonContainer = document.querySelector(".playButtonContainer");
     const paramButtonContainer = document.querySelector(".paramButtonContainer");
+    const S1 = document.getElementById("S1");
 
     navButton.addEventListener("click", () => {
         if (window.innerWidth < 768) {
