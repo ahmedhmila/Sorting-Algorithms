@@ -328,7 +328,7 @@
 }
  .card {
      display: flex;
-     height: 34vh;
+     height: 33vh;
      align-items: center;
      justify-content: center;
      aspect-ratio: 1;
