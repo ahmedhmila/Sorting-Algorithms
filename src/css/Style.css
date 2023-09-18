@@ -552,6 +552,10 @@ body.dark-mode {
 /*écrans bro */
 /* For screens with a width of 768px or less (typical tablet screens) */
 @media (max-width: 768px) {
+    .card{
+        height: 20vh;
+        border-radius: 1rem;
+    }
   .rectangle{
     margin: 2px;
     width: 12px;
@@ -622,8 +626,8 @@ body.dark-mode {
         height: 23px;
    }
     #logoImage{
-        width: 300px;
-        height: 300px;
+        width: 245px;
+        height: 245px;
    }
     .infocard-text{
         overflow-x: auto;
