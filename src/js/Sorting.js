@@ -21,7 +21,10 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 });
 
-
+toul_rect=300;
+if (window.innerWidth < 768) {
+	toul_rect=230;
+}else(toul_rect=300)
 
 //kaddeh mn élt fl array
 function chiffre(f) {
@@ -89,7 +92,7 @@ function createRectanglesBS(
 			rectangle.classList.add("rectangle");
 		}
 
-		const height = (value / 100) * 300;
+		const height = (value / 100) * toul_rect;
 		rectangle.style.height = height + "px";
 		rectangle.textContent = value;
 
@@ -159,7 +162,7 @@ async function createRectanglesSS(
 			console.log("Sorting complete");
 		}
 
-		const height = (value / 100) * 300;
+		const height = (value / 100) * toul_rect;
 		rectangle.style.height = height + "px";
 		rectangle.textContent = value;
 
@@ -243,7 +246,7 @@ function createRectanglesIS(
 			console.log("Sorting complete");
 		}
 
-		const height = (value / 100) * 300;
+		const height = (value / 100) * toul_rect;
 		rectangle.style.height = `${height}px`;
 		rectangle.textContent = value;
 
@@ -331,7 +334,7 @@ function createRectanglesMS(array, l, r, isSortingComplete) {
 			console.log("Sorting complete");
 		}
 
-		const height = (value / 100) * 300;
+		const height = (value / 100) * toul_rect;
 		rectangle.style.height = `${height}px`;
 		rectangle.textContent = value;
 
@@ -393,7 +396,7 @@ function createRectanglesQS(
 			console.log("Sorting complete");
 		}
 
-		const height = (value / 100) * 300;
+		const height = (value / 100) * toul_rect;
 		rectangle.style.height = `${height}px`;
 		rectangle.textContent = value;
 
@@ -456,7 +459,7 @@ function createRectanglesHS(array, currentIndex, largestIndex, isSortingComplete
 			rectangle.style.backgroundColor = "#06bb00";
 		}
 
-		const height = (value / 100) * 300;
+		const height = (value / 100) * toul_rect;
 		rectangle.style.height = `${height}px`;
 		rectangle.textContent = value;
 
@@ -522,7 +525,7 @@ function createRectanglesRS(array, currentIndex, largestIndex, isSortingComplete
 			rectangle.style.backgroundColor = "#06bb00";
 		}
 
-		const height = (value / 100) * 300;
+		const height = (value / 100) * toul_rect;
 		rectangle.style.height = `${height}px`;
 		rectangle.textContent = value;
 
