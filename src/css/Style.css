@@ -323,7 +323,6 @@ body.dark-mode {
     --dgrad-main-light-rgb: 240 248 255;
     --dgrad-secondary-rgb: 229 141 250;
     --card-size: 480px;
-    --font-size: 0.8rem;
     --logo-size: calc(var(--card-size) * 0.3);
 }
 .card {
