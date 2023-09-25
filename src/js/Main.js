@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 S1.style.marginRight = "2%";
             }
         } else {
-            if (playButtonContainer.style.display === "none") {
-                playButtonContainer.style.display = "block";
+            if (paramsContainer.style.visibility === "hidden") {
+                paramsContainer.style.visibility = "visible";
             } else {
-                playButtonContainer.style.display = "none";
+                paramsContainer.style.visibility = "hidden";
             }
         }
     });
