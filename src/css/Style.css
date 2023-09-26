@@ -3,13 +3,14 @@
     display: flex;
     align-items: flex-end;
     position: relative;
-    justify-content: center;
-    margin: 75px 0px 0px 0px;
+    justify-content: left;
+    margin-top: 75px ;
     height: 30vh;
     width: 92%;
     overflow-x: auto;
 }
 .rectangle {
+    position: static;
     margin: 5px;
     width: 20px;
     background-color: rgb(111, 111, 111);
@@ -147,7 +148,7 @@ button:hover{
     background-color: aliceblue;
     color: #000000;
     cursor: pointer;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: bold;
     font-family: monospace;
 }
@@ -544,56 +545,46 @@ body.dark-mode {
 .blink {
     animation: blink-animation 0.8s infinite;
 }
-
-
 /*scrollbar ya bro */
 ::-webkit-scrollbar {
-    width: 10px; 
+    width: 10px;
     background: transparent;
 }
 ::-webkit-scrollbar-track {
-        visibility: hidden; 
+    visibility: hidden;
 }
-
-
 ::-webkit-scrollbar-thumb {
-        background: rgba(172, 172, 172, 0.9);
-        border-radius: 6px;
-        width: 10px; 
-
+    background: rgba(172, 172, 172, 0.9);
+    border-radius: 6px;
+    width: 10px;
 }
 /* Arrow buttons (top and bottom buttons) */
 ::-webkit-scrollbar-button {
     background: transparent;
-    display: none; 
-  }
-
-::-webkit-scrollbar-button:horizontal {
-    background: transparent; 
-    width: 10px; 
-
+    display: none;
 }
-  
-  
+::-webkit-scrollbar-button:horizontal {
+    background: transparent;
+    width: 10px;
+}
 /*écrans bro */
 /* For screens with a width of 768px or less (typical tablet screens) */
 @media (max-width: 768px) {
     .card{
         height: 22vh;
         border-radius: 1rem;
-    }
-  .rectangle{
-    margin: 2px;
-    width: 12px;
-    font-size: 12px;
-  }
-  .infocard:hover{
-    scale: 1;
-  }
-  .rectangle-container{
-    margin: 27px 2.3% 0 2.3%;    width: auto;
-
-
+   }
+    .rectangle{
+        margin: 2px;
+        width: 12px;
+        font-size: 12px;
+   }
+    .infocard:hover{
+        scale: 1;
+   }
+    .rectangle-container{
+        margin: 27px 2.3% 0 2.3%;
+        width: auto;
    }
     nav {
         flex-direction: column;
@@ -601,9 +592,9 @@ body.dark-mode {
         width: 100%;
    }
     #navButton{
-      font-size: 25px;
-      margin-left: 3.1%;
-      width: auto;
+        font-size: 25px;
+        margin-left: 3.1%;
+        width: auto;
    }
     .ParamsContainer {
         margin-top: 2%;
@@ -617,25 +608,23 @@ body.dark-mode {
     select {
         font-size: 21px;
         left: 0;
-
-    }
+   }
     input {
         font-size: 19px;
-       }
+   }
     .playButtonContainer, .paramButtonContainer {
         display: block;
         width: 10%;
         left: 0;
         margin-left: 0;
    }
-   #playButton:hover{
-    scale: 1.30;
-    }
+    #playButton:hover{
+        scale: 1.30;
+   }
     .S1{
         margin-left: 10%;
         width: 88%;
         margin-right:2% ;
-
    }
     .rectangle-container{
         overflow-x: auto;
@@ -658,13 +647,13 @@ body.dark-mode {
     .infocard-text{
         overflow-x: auto;
    }
-   .infocard-title{
-    font-size: 30px;
-    }
+    .infocard-title{
+        font-size: 30px;
+   }
     .infocard{
         height: 74vh;
         border-radius: 1rem;
-    }
+   }
     .infocard-container{
         height: 77vh;
         border-radius: 1rem;
@@ -672,11 +661,11 @@ body.dark-mode {
         width: 86%;
         margin-left: 7%;
         margin-right: 7%;
-    }
+   }
     .infocard-logo{
         margin-right: 3.9%;
    }
-   .footer {
+    .footer {
         flex-direction: column;
         align-items: center;
         margin-top: 60px;
@@ -687,7 +676,6 @@ body.dark-mode {
         display: block;
         text-align: center;
         font-size: 13px;
-
    }
     .footer-logo img {
         width: 40px;
