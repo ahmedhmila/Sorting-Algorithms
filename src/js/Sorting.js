@@ -43,18 +43,12 @@ function fill(nb) {
 //verifi w fill array
 function VerifandFill() {
 	var f = document.getElementById("numE").value;
-	const rec_container=document.getElementById("rectangle-container");
+	
+	
+
 	if (!chiffre(f)) {
 		alert("Enter a number between 2 & 99");
 	}
-	document.addEventListener("DOMContentLoaded", function() {
-
-	if (f>34){
-		rec_container.style.justifyContent = "left";
-	}
-	if (f<34){
-		rec_container.style.justifyContent = "center";
-	}});
 
 	
 	let array = fill(f);
@@ -556,7 +550,7 @@ document.getElementById('infoL').addEventListener('click', () => {
 async function Start() {
 	document.getElementById('S2').style.display = 'block';
 
-
+	
 	const title = document.getElementById("infocard-title");
 	const textContent = document.getElementById("infocard-text");
 
@@ -745,5 +739,7 @@ function heapify(arr, n, i){
 	title.innerHTML = `${ty} Sort`;
 	textContent.innerHTML = isAlgorithmShown ? `<h2>Algorithm</h2><pre>${algorithm}</pre>` : `<h2>Explanation</h2>${explanation}`;
 }
+
+
 
 
