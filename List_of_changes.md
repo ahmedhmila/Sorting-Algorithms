@@ -8,7 +8,7 @@
 - Fixed anti-Pattern code found in Main.js
 - Fixed an issue with usage of undeclared variables
 
-##**Update 1.10**
+## **Update 1.10**
 
 -Update Main.js :Updated the params container's visibility to be toggled instead of the play button where the screen width is > than 768
 -Fixed a display issue not letting some rectangles appear on large screens 
