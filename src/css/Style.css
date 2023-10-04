@@ -720,6 +720,25 @@ body.dark-mode {
         left: 0;
         margin-left: 0;
    }
+     .footer {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        bottom: 40px;
+        margin-right: 5%;
+   }
+    .footer-logo, .footer-text, .github {
+        display: block;
+        text-align: center;
+        font-size: 13px;
+   }
+    .footer-logo img {
+        width: 40px;
+   }
+    .footer-logo{
+        margin-top: 19px;
+   }
+}
 }
 /* For screens with a width of 1600px or less (typical desktop screens) */
 @media (max-width: 1600px) {
